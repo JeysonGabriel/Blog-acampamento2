@@ -1,0 +1,126 @@
+/*
+font-family: 'Arvo', serif;
+font-family: 'Caveat', cursive;
+*/
+
+.body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand{
+    font-family: 'Caveat', cursive;
+    font-size: 250%;
+    color: rgb(145, 145, 145);
+}
+.navbar-brand:hover{
+    color: white;
+}
+#IMGprincipal {
+    width: 100%;
+}
+.navbar{
+    --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='gray ' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-color: rgb(141, 141, 141);
+    background-color: transparent; /* Inicialmente transparente */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.navbar.scrolled {
+    background-color: white; /* Cor de fundo da navbar quando a página é rolada */
+  }
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Trata da div que contem o texto impactante da tela inicial*/
+#divTextpPrincipal {
+    width: 550px;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    z-index: 1;
+}
+@media (max-width: 980px) {
+    #divTextpPrincipal {
+        width: 350px;
+        top: 15%;
+    }
+}
+@media (max-width: 700px) {
+    #divTextpPrincipal {
+        width: 250px;
+        top: 10%;
+    }
+}
+@media (max-width: 460px) {
+    #divTextpPrincipal {
+        width: 250px;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/*Trata do texto principal da tela inicial*/
+#nome {
+    font-size: 60px;
+    color: rgb(190, 190, 190);
+    font-family: 'Arvo', serif;
+    text-shadow: 0.1em 0.1em 0.3em black
+}
+@media (max-width: 980px) {
+    #nome {
+        font-size: 35px;
+    }
+}
+@media (max-width: 700px) {
+    #nome {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 460px) {
+    #nome {
+        font-size: 17px;
+    }
+}
+
+
+/*Trata do efeito gradiente abaixo da imagem*/
+#gradiente {
+    position: inherit;
+    margin-top: -10px;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(black, rgb(100, 100, 100), white)
+}
+@media (max-width: 600px) {
+    #gradiente {
+        height: 300px;
+    }
+}
+
+.offcanvas-title{
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+    border: 0.5px solid;
+    text-align: center;
+    color: rgb(141, 141, 141);
+    box-shadow: 5px solid black;
+    border-radius: 10px;
+}
+.nav-link:hover {
+    color: white;
+}
